@@ -12,7 +12,7 @@ job "nginx" {
       }
       artifact = {
         source = "https://raw.githubusercontent.com/ishworgurung/nomad-jobs/master/nginx/index.html"
-        destination = "index.html"
+        destination = "/usr/share/nginx/html/index.html"
       }
       service {
         name = "nginx"
