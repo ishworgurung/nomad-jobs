@@ -30,7 +30,9 @@ job "nginx" {
         memory = 64
         network {
             mbits = 10
-            port "http" {}
+            port "http" {
+                 static = "9999"
+            }
         }
       }
     }
